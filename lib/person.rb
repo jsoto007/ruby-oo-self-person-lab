@@ -9,16 +9,7 @@ class Person
         @name = name
         @bank_account = bank_account
         @happiness = happiness
-        # if happiness > 10
-        #     @happiness = 10
-        #  else
-        #   @happiness = happiness
-        #  end
-        # if happiness > 10
-  		#  happiness = 10
-        # else
-        #  @happiness = happiness
-        # end
+   
     end
 
     def name 
@@ -35,6 +26,19 @@ class Person
     def happiness
         @happiness
     
+    end
+
+    def happiness=(happiness)
+        if happiness > 10
+            @happiness = 10
+        else
+          @happiness = happiness
+        end
+        # if happiness < 0
+        
+        # else
+        #     @happiness = happiness
+        # end 
     end
 
 
