@@ -28,26 +28,27 @@ class Person
     
     end
 
-    def happiness=(happiness)
-        if happiness > 10
-            @happiness = 10
-        else
-          @happiness = happiness
-        end
-        # if happiness < 0
-        
-        # else
-        #     @happiness = happiness
-        # end 
-    end
+
+    # def happiness=(happiness)
+    #     @happiness = happiness
+    #     happiness.clamp(0, 10)
+    # end 
+
+
+
+    # def happiness
+    #     @happiness = 10 if happiness > 10
+    #     @happiness = 0 if happiness < 0 
+    #     @happiness
+    # end 
+
+    # def happiness=(happiness)
+    #     if happiness > 10
+    #         @happiness = 10
+    #     else
+    #       @happiness = happiness
+    #     end
+    # end
 
 
 end 
-
-
-
-# if happiness is greater than 10
-  			#happiness equals 10
- 		#else
-        #  @happiness = happiness
-         #end
